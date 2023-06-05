@@ -1,0 +1,154 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    /* tira toda magem padrão que o navegador coloca */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    /* alinhado ao centro */
+    justify-content: center;
+    height: 120px;
+
+}
+
+.container {
+    display: flex;
+    /* colocando cada  conteúdos de um lado */
+    justify-content: space-between;
+    width: 990px;    
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    
+}
+
+/* Tudo dentro do nav vai ser tirado o espaçamento para que seja uma lista de links */
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+/* Ao passar o curso do mouse no link do menu... */
+
+nav .active a,
+nav a:hover{
+    background-color: #39aae1;
+    color: #ffffff;
+}
+
+#banner{
+    display: flex;
+    /* centralizando o conteúdo do banner */
+    justify-content: center;
+    background-image: url('../images/8633267.jpg');
+    /* centraliza a imagem ao meio */
+    background-position: center;
+    /* A image se adequará conforme o tamanho da tela */
+    background-size: cover;
+    /* para ver a imagem temos que colocar uma altura falsa */
+    height: 670px;
+}
+
+.columm {
+    flex-direction: column;
+}
+
+.banner-headling {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-headling h1 {
+    color: #39aae1;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner-headling h2 {
+    color: #39aae1;
+    font-size: 22px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+
+
+.banner-options {
+    height: 210px;
+    display: flex;
+    
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner-title {
+    font-size: 21px;
+}
+
+.banner-desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a {
+    /* inline-block para acompanhar o tamanho do texto */
+    display: inline-block;
+    border: 1px solid #ffff;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
